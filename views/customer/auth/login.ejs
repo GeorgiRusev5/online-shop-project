@@ -1,0 +1,38 @@
+<%- include('../../shared/includes/head', { pageTitle: 'Log In'}) %>
+<link rel="stylesheet" href="/styles/forms.css">
+<link rel="stylesheet" href="/styles/auth.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="/scripts/password.icon.js" defer></script>
+</head>
+<body>
+    <%- include('../../shared/includes/header') %> 
+    <main>
+        <h1>Login</h1>
+        <% if(inputData.errorMessage){ %>
+            <section class="alert">
+                <h2>Invalid Credentials</h2>
+                <p><%= inputData.errorMessage %></p>
+            </section>
+            <% } %> 
+        <form action="/login" method="POST">
+            <input type="hidden" name="_csrf" value="<%= locals.csrfToken %>">
+            <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="<%= inputData.email %>" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" minlength="8" maxlength="12" value="<%= inputData.password %>" required>
+            <i class="fa-solid fa-eye" id="show-password"></i>
+        </p>
+        <button class="btn">Login</button>
+        <p>Don't have an account?</p>
+        <p id="existing-account"><a href="/signup">Create a new  account</a></p>
+        </form>
+        <p hidden>
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" maxlength="12" required>
+            <i class="fa-solid fa-eye" id="show-confirmed-password"></i>
+        </p>
+    </main>
+<%- include('../../shared/includes/footer') %> 

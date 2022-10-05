@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+    color: var(--color-gray-300);
+}
+form{
+    max-width: 25rem;
+    margin: var(--space-8) auto;
+    padding: var(--space-4);
+    background-color: var(--color-gray-600);
+    border-radius: var(--border-radius-medium);
+    text-align: center;
+}
+
+form a{
+    color: var(--color-primary-200);
+}
+form a:hover,
+form a:active{
+    color: var(--color-primary-400);
+}
+.fa-eye{
+    position: absolute;
+    padding: var(--space-2) 0;
+    margin-left: var(--space-negative-6);
+    color: var(--color-gray-300);
+    cursor: pointer;
+}
+
+.fa-eye-slash{
+    position: absolute;
+    width: 18px;
+    padding: var(--space-2) 0;
+    margin-left: var(--space-negative-6);
+    color: var(--color-gray-300);
+    cursor: pointer;
+}
