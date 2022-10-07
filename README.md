@@ -1,5 +1,12 @@
 # online-shop-project
 This is a NodeJS/Express web application with vanilla JS on the front-end. It was made during the "100 days of coding" udemy course by Maximilian Schwarzmüller.
+### Deployment
+The application has been deployed and can be viewed <ins>**[here.](https://online-shop-project375.herokuapp.com/)**</ins> You can also try to deploy it on your own. In the project folder you can find a __.env.example__ file which has all environment variables and short explaination on what they should be set as.  <br/> <br/>
+For the purpose of testing I am providing an admin account, which will allow you to create/delete new products and manage orders. You will also be allowed to create your own user account, however admin privileges won't be present. <br/>
+***Admin Account*** <br/>
+Email: test<span>@test.com</span><br/>
+Password: 12345678aA!
+
 ## The application includes
 ### Structure
 - Registration Page
@@ -40,4 +47,4 @@ This is a NodeJS/Express web application with vanilla JS on the front-end. It wa
 - multer - middleware, used for handling the uploading of files
 - uuid/uuid.v4 - used for creating unique ID's. In the project it's used for creating ID's for the product images
 - stripe - wrapper that provides access to the Stripe API payment system
-### Extra Notes
+
