@@ -5,7 +5,8 @@ The application has been deployed and can be viewed <ins>**[here.](https://onlin
 For the purpose of testing I am providing an admin account, which will allow you to create/delete new products and manage orders. You will also be allowed to create your own user account, however admin privileges won't be present. <br/>
 ***Admin Account*** <br/>
 Email: test<span>@test.com</span><br/>
-Password: 12345678aA!
+Password: 12345678aA! <br/>
+***NOTE: The images of the products might be deleted by the time you check the page, due to Heroku's policy***
 
 ## The application includes
 ### Structure
