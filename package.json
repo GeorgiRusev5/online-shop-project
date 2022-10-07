@@ -4,7 +4,8 @@
   "description": "Online shop project, made during the '100 days of web development bootcamp'.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "G. Rusev",
